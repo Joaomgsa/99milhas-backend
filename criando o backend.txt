@@ -1,0 +1,10 @@
+Backend do 99milhas
+
+usando imagem docker db postgres. 
+
+
+Seguindo os tutoriais: 
+https://felixgilioli.medium.com/como-rodar-um-banco-de-dados-postgres-com-docker-6aecf67995e1
+e a documentação oficial.
+
+https://felixgilioli.medium.com/como-rodar-um-banco-de-dados-postgres-com-docker-6aecf67995e1
