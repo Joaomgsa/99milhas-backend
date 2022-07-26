@@ -20,11 +20,11 @@ public class Cliente {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
+	private Long id;
 	
-	private String Nome;
-	private String Cpf;
-	private String Telefone;
-	private String Email;
+	private String nome;
+	private String cpf;
+	private String telefone;
+	private String email;
 
 }
