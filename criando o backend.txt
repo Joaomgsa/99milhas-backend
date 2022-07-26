@@ -8,3 +8,13 @@ https://felixgilioli.medium.com/como-rodar-um-banco-de-dados-postgres-com-docker
 e a documentação oficial.
 
 https://felixgilioli.medium.com/como-rodar-um-banco-de-dados-postgres-com-docker-6aecf67995e1
+
+
+ docker run --name dbpostgres --network=postgres-network -e POSTGRES_PASSWORD=1234 -p 5432:5432 -v C:\Users\joaom\OneDrive\Documentos\dev\DB\postgres: C:\Users\joaom\OneDrive\Documentos\dev\DB\postgres\data -d postgres
+
+
+docker run --name db-postgres --network=postgres-network -e "POSTGRES_PASSWORD=1234" -p 5432:5432 -v C:\Users\joaom\OneDrive\Documentos\dev\DB\postgres -d postgres
+
+
+docker run --name db-pgadmin --network=postgres-network -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=joaomgsa@gmail.com" -e "PGADMIN_DEFAULT_PASSWORD=Admin@1234" -d dpage/pgadmin4
+
