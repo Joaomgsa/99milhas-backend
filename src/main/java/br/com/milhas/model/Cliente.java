@@ -27,7 +27,7 @@ public class Cliente {
 	private Long id;
 	@NotBlank
 	private String nome;
-	@CPF
+	@NotBlank
 	private String cpf;
 	@NotBlank
 	private String telefone;
