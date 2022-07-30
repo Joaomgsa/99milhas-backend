@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping({"/clientes"})
@@ -40,7 +40,7 @@ public class ClienteController {
 	}
 	
 	@PostMapping
-	public Cliente create(@RequestBody Cliente cliente) {
+	public Cliente create(@RequestBody @Valid Cliente cliente) {
 		return repository.save(cliente);
 	}
 	
